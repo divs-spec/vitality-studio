@@ -1,0 +1,38 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vitality-execution
+  namespace: vitality-studio
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vitality-execution
+  template:
+    metadata:
+      labels:
+        app: vitality-execution
+    spec:
+      containers:
+        - name: execution
+          image: vitality-execution:latest
+          ports:
+            - containerPort: 9000
+          resources:
+            limits:
+              memory: "256Mi"
+              cpu: "500m"
+
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: vitality-execution
+  namespace: vitality-studio
+spec:
+  selector:
+    app: vitality-execution
+  ports:
+    - protocol: TCP
+      port: 9000
+      targetPort: 9000

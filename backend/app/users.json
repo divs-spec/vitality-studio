@@ -1,0 +1,14 @@
+{
+  "alice@example.com": {
+    "id": "c37ddfb0-d580-4bf1-859d-a737f0d44fb8",
+    "email": "alice@example.com",
+    "pw": "$pbkdf2-sha256$29000$Uwoh5FyrNcYYg/BeS2ktZQ$Y1dSClW6QzHX1DIkR9KU4.ILztkQHDTRLWrdTlYFc84",
+    "created_at": "2026-06-19T20:32:21.517669Z"
+  },
+  "test@example.com": {
+    "id": "e6e9e1cc-32bd-40b1-b7a5-05eab35105d9",
+    "email": "test@example.com",
+    "pw": "$pbkdf2-sha256$29000$YGytdS5FyDkHQIgRQghBaA$82JG/CoiE25h8/syFS62KMeV3XFJAvrToyV3YMnx0Wg",
+    "created_at": "2026-06-19T21:02:12.471416Z"
+  }
+}

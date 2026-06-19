@@ -1,0 +1,20 @@
+.app {
+  display: grid;
+  grid-template-columns: 240px 1fr 320px;
+  grid-template-rows: 1fr;
+  height: 100vh;
+  background: #0f1720;
+  color: #e6eef6;
+  font-family: Inter, Arial, sans-serif;
+}
+.sidebar {
+  padding: 16px;
+  border-right: 1px solid rgba(255,255,255,0.04);
+}
+.center {
+  padding: 16px;
+}
+.right {
+  padding: 16px;
+  border-left: 1px solid rgba(255,255,255,0.04);
+}
